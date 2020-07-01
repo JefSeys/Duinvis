@@ -94,6 +94,15 @@ h2{
     background-color: #4CAF50;
     color: white;
   }
+
+  #navbar .logotext{
+    float: right;
+  }
+
+  #navbar a:hover:hover {
+    background-color: inherit;
+    color: inherit;
+  }
   
   .content {
     margin-top: 15px;
