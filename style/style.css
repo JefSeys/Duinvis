@@ -13,7 +13,7 @@ body {
 }
 
 #deWoning{
-  background-image: url('../images/achtergrondDonker.jpeg');
+  background-image: url('../images/achtergrondDonker.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
