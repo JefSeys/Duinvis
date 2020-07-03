@@ -2,22 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #2c303c;/*
-  background-image: url('../images/achtergrondDonker.jpeg');
-  background-size: cover;*/
+body {/*
+  background-color: #2c303c;*/
+  background-image: url('../images/achtergrond.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
   font-weight: bold;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*
 #deWoning{
-  background-image: url('../images/achtergrondDonker.jpg');
+  background-image: url('../images/achtergrond.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
-
+*/
 h2{
   margin-bottom: 10px;
 }
@@ -168,7 +169,7 @@ h2{
   list-style-type: square;
 }
 
-.email{
+.link{
   color: #30a1ec;
     text-decoration: none;
 }
