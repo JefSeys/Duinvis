@@ -15,13 +15,27 @@
       <img class="logo" src="images/banner.jpg" style="width: 100%;" />
     </div>
     <div id="navbar">
-      <a href="#home">Duinvis</a>
-      <a href="#deWoning">De Woning</a>
-      <a href="#info">Info</a>
-      <a href="#ligging">Ligging</a>
-      <a href="#contact">Contact</a>
-      <a href="#recensies">Recensies</a>
-      <a class="logotext">Vakantiewoning duinvis</a>
+      <div class="stippenKlein">
+        <a onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+        
+      <div class="titelKlein" id="titelKlein">
+        <a href="#home"  onclick="toggleMenu()">Duinvis</a>
+        <a href="#deWoning" onclick="toggleMenu()">De Woning</a>
+        <a href="#info" onclick="toggleMenu()">Info</a>
+        <a href="#ligging" onclick="toggleMenu()">Ligging</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a href="#recensies" onclick="toggleMenu()">Recensies</a>
+      </div>
+      </div>
+      <div class="titel" id="titel">
+        <a href="#home">Duinvis</a>
+        <a href="#deWoning">De Woning</a>
+        <a href="#info">Info</a>
+        <a href="#ligging">Ligging</a>
+        <a href="#contact">Contact</a>
+        <a href="#recensies">Recensies</a>
+      </div>
+        <a class="logotext">Vakantiewoning duinvis</a>
     </div>
     <div class="content">
       <div id="home">
@@ -412,6 +426,15 @@
       navbar.classList.remove("sticky");
     }
   }
+
+  function toggleMenu() {
+  var x = document.getElementById("titelKlein");
+  if (x.style.display === "inline-block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline-block";
+  }
+}
 </script>
 <script src="js/slideshow.js"></script>
 <script src="js/lightbox.js"></script>

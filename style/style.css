@@ -49,10 +49,16 @@ h2{
   background-image: unset;
 }
 
-
-
 #home, #recensies{
   padding-bottom: 80px;
+}
+
+.stippenKlein{
+  display: none;
+}
+
+#navbar a{
+  text-align: left!important;
 }
 
 .vakantiewoningTitel{
@@ -159,13 +165,14 @@ h2{
 .eersteContact{
   width: 49%;
   float: left;
-  padding-left: 20%;
+  padding-right: 5%;
   text-decoration: none;
+  text-align: right;
 }
 
 .tweedeContact{
   width: 49%;
-  padding-left: 10%;
+  padding-left: 7%;
 }
 
 .eersteContact ul li, .tweedeContact ul li{
@@ -603,6 +610,28 @@ section {
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
-	}
+  }
+  
+  .infoDeel1, .infoDeel2, .infoDeel3{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .infoDelen{
+    display: table;
+    margin: 0 auto;
+  }
 
+  .stippenKlein{
+    display: block;
+    float: left;
+  }
+
+  .titel{
+    display: none;
+  }
+
+  #navbar a{
+    float: none;
+  }
 }
