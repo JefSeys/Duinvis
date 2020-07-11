@@ -90,7 +90,7 @@ h2{
 .imageGroot{
   width: auto;
   height: auto;
-  max-width: 90vw;
+  max-width: 100%;
   max-height: 86vh;
 }
 
@@ -260,7 +260,7 @@ h2{
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 90%;
 }
 
 /* The Close Button */
