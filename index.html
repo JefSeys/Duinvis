@@ -1,239 +1,232 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Duinvis</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes"
-    />
-    <link href="style/reset_browser_styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style/font-awesome.min.css" />
-    <link href="style/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="header">
-      <img class="logo" src="images/banner.jpg" style="width: 100%;" />
-    </div>
-    <div id="navbar">
-      <div class="stippenKlein">
-        <a onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
-        
+<head>
+  <title>Duinvis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="icon" href="images/icon.png" />
+  <link href="style/reset_browser_styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/font-awesome.min.css" />
+  <link href="style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="images/banner.jpg" style="width: 100%;" />
+  </div>
+  <div id="navbar">
+    <div class="stippenKlein">
+      <a onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+
       <div class="titelKlein" id="titelKlein" style="display: none;">
-        <a href="#home"  onclick="toggleMenu()">Duinvis</a>
+        <a href="#home" onclick="toggleMenu()">Duinvis</a>
         <a href="#deWoning" onclick="toggleMenu()">De Woning</a>
         <a href="#info" onclick="toggleMenu()">Info</a>
         <a href="#ligging" onclick="toggleMenu()">Ligging</a>
         <a href="#contact" onclick="toggleMenu()">Contact</a>
         <a href="#recensies" onclick="toggleMenu()">Recensies</a>
       </div>
-      </div>
-      <div class="titel" id="titel">
-        <a href="#home">Duinvis</a>
-        <a href="#deWoning">De Woning</a>
-        <a href="#info">Info</a>
-        <a href="#ligging">Ligging</a>
-        <a href="#contact">Contact</a>
-        <a href="#recensies">Recensies</a>
-      </div>
-        <a class="logotext">Vakantiewoning duinvis</a>
     </div>
-    <div class="content">
-      <div id="home">
-        <h2 class="center">Vakantiewoning duinvis</h2>
-        <div class="titelLijn center"></div>
-        <div class="intro">
-          <p>
-            Duinvis is een vakantiewoning met alle comfort en voeten in het zand.
-          </p>
-          <p>
-            Binnenin  is er mooi Noordzeelicht en zicht op duinenzand.
-          </p>
-          <p>
-            De gezellige kleuren en tijdloze eenvoud brengen je onmiddellijk in vakantiesfeer.
-          </p>
-          <p>
-            Duinvis is rustig gelegen  op 800m van het  mooie strand van Sint -André.
-          </p>
-        </div>
+    <div class="titel" id="titel">
+      <a href="#home">Duinvis</a>
+      <a href="#deWoning">De Woning</a>
+      <a href="#info">Info</a>
+      <a href="#ligging">Ligging</a>
+      <a href="#contact">Contact</a>
+      <a href="#recensies">Recensies</a>
+    </div>
+    <a class="logotext">Vakantiewoning duinvis</a>
+  </div>
+  <div class="content">
+    <div id="home">
+      <h2 class="center">Vakantiewoning duinvis</h2>
+      <div class="titelLijn center"></div>
+      <div class="intro">
+        <p>
+          Duinvis is een vakantiewoning met alle comfort en voeten in het zand.
+        </p>
+        <p>
+          Binnenin is er mooi Noordzeelicht en zicht op duinenzand.
+        </p>
+        <p>
+          De gezellige kleuren en tijdloze eenvoud brengen je onmiddellijk in vakantiesfeer.
+        </p>
+        <p>
+          Duinvis is rustig gelegen op 800m van het mooie strand van Sint -André.
+        </p>
       </div>
+    </div>
 
-      <div id="deWoning">
-        <h2 class="center">De Woning</h2>
-        <div class="titelLijn center"></div>
-        <h3 class="vakantiewoningTitel">Vakantiewoning 1</h3>
-        <!-- Images used to open the lightbox -->
-        <div class="imageShow center">
-          <div class="row">
-            <div class="column">
-              <img src="images/1.jpg" onclick="openModal();currentSlideLightbox(1)" class="hover-shadow smallImage">
-              <img src="images/5.jpg" onclick="openModal();currentSlideLightbox(5)" class="hover-shadow smallImage">
-              <img src="images/8.jpg" onclick="openModal();currentSlideLightbox(8)" class="hover-shadow smallImage">
-              <img src="images/12.jpg" onclick="openModal();currentSlideLightbox(12)" class="hover-shadow smallImage">
-            </div>
-            <div class="column">
-              <img src="images/2.jpg" onclick="openModal();currentSlideLightbox(2)" class="hover-shadow smallImage">
-              <img src="images/6.jpg" onclick="openModal();currentSlideLightbox(6)" class="hover-shadow smallImage">
-              <img src="images/9.jpg" onclick="openModal();currentSlideLightbox(9)" class="hover-shadow smallImage">
-              <img src="images/13.jpg" onclick="openModal();currentSlideLightbox(13)" class="hover-shadow smallImage">
-            </div>
-            <div class="column">
-              <img src="images/3.jpg" onclick="openModal();currentSlideLightbox(3)" class="hover-shadow smallImage">
-              <img src="images/10.jpg" onclick="openModal();currentSlideLightbox(10)" class="hover-shadow smallImage">
-              <img src="images/14.jpg" onclick="openModal();currentSlideLightbox(14)" class="hover-shadow smallImage">
-            </div>
-            <div class="column">
-              <img src="images/4.jpg" onclick="openModal();currentSlideLightbox(4)" class="hover-shadow smallImage">
-              <img src="images/7.jpg" onclick="openModal();currentSlideLightbox(7)" class="hover-shadow smallImage">
-              <img src="images/11.jpg" onclick="openModal();currentSlideLightbox(11)" class="hover-shadow smallImage">
-            </div>
+    <div id="deWoning">
+      <h2 class="center">De Woning</h2>
+      <div class="titelLijn center"></div>
+      <div class="imageShow center">
+        <div class="row">
+          <div class="column">
+            <img src="images/1.jpg" onclick="openModal();currentSlideLightbox(1)" class="hover-shadow smallImage">
+            <img src="images/5.jpg" onclick="openModal();currentSlideLightbox(5)" class="hover-shadow smallImage">
+            <img src="images/8.jpg" onclick="openModal();currentSlideLightbox(8)" class="hover-shadow smallImage">
+            <img src="images/12.jpg" onclick="openModal();currentSlideLightbox(12)" class="hover-shadow smallImage">
+          </div>
+          <div class="column">
+            <img src="images/2.jpg" onclick="openModal();currentSlideLightbox(2)" class="hover-shadow smallImage">
+            <img src="images/6.jpg" onclick="openModal();currentSlideLightbox(6)" class="hover-shadow smallImage">
+            <img src="images/9.jpg" onclick="openModal();currentSlideLightbox(9)" class="hover-shadow smallImage">
+            <img src="images/13.jpg" onclick="openModal();currentSlideLightbox(13)" class="hover-shadow smallImage">
+          </div>
+          <div class="column">
+            <img src="images/3.jpg" onclick="openModal();currentSlideLightbox(3)" class="hover-shadow smallImage">
+            <img src="images/10.jpg" onclick="openModal();currentSlideLightbox(10)" class="hover-shadow smallImage">
+            <img src="images/14.jpg" onclick="openModal();currentSlideLightbox(14)" class="hover-shadow smallImage">
+          </div>
+          <div class="column">
+            <img src="images/4.jpg" onclick="openModal();currentSlideLightbox(4)" class="hover-shadow smallImage">
+            <img src="images/7.jpg" onclick="openModal();currentSlideLightbox(7)" class="hover-shadow smallImage">
+            <img src="images/11.jpg" onclick="openModal();currentSlideLightbox(11)" class="hover-shadow smallImage">
           </div>
         </div>
+      </div>
 
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 14</div>
-      <img src="images/1.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">1 / 14</div>
+            <img src="images/1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 14</div>
-      <img src="images/2.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 14</div>
+            <img src="images/2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 14</div>
-      <img src="images/3.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 14</div>
+            <img src="images/3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 14</div>
-      <img src="images/4.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 14</div>
+            <img src="images/4.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">5 / 14</div>
-      <img src="images/5.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 14</div>
+            <img src="images/5.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">6 / 14</div>
-      <img src="images/6.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 14</div>
+            <img src="images/6.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">7 / 14</div>
-      <img src="images/7.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 14</div>
+            <img src="images/7.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">8 / 14</div>
-      <img src="images/8.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 14</div>
+            <img src="images/8.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">9 / 14</div>
-      <img src="images/9.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 14</div>
+            <img src="images/9.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">10 / 14</div>
-      <img src="images/10.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 14</div>
+            <img src="images/10.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">11 / 14</div>
-      <img src="images/11.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 14</div>
+            <img src="images/11.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">12 / 14</div>
-      <img src="images/12.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 14</div>
+            <img src="images/12.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">13 / 14</div>
-      <img src="images/13.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">13 / 14</div>
+            <img src="images/13.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <div class="mySlides">
-      <div class="numbertext">14 / 14</div>
-      <img src="images/14.jpg" style="height:90%; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+          <div class="mySlides">
+            <div class="numbertext">14 / 14</div>
+            <img src="images/14.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
 
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlidesLightbox(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlidesLightbox(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlidesLightbox(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlidesLightbox(1)">&#10095;</a>
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
 
-    <!-- Thumbnail image controls -->
-    <div class="column center">
-      <img class="demo" src="images/1.jpg" onclick="currentSlideLightbox(1)" alt="Buitenkant">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/1.jpg" onclick="currentSlideLightbox(1)" alt="Buitenkant">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/2.jpg" onclick="currentSlideLightbox(2)" alt="Buitenkant">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/2.jpg" onclick="currentSlideLightbox(2)" alt="Buitenkant">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/3.jpg" onclick="currentSlideLightbox(3)" alt="Buitenkant">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/3.jpg" onclick="currentSlideLightbox(3)" alt="Buitenkant">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/4.jpg" onclick="currentSlideLightbox(4)" alt="Living">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/4.jpg" onclick="currentSlideLightbox(4)" alt="Living">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/5.jpg" onclick="currentSlideLightbox(5)" alt="Living">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/5.jpg" onclick="currentSlideLightbox(5)" alt="Living">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/6.jpg" onclick="currentSlideLightbox(6)" alt="Keuken">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/6.jpg" onclick="currentSlideLightbox(6)" alt="Keuken">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/7.jpg" onclick="currentSlideLightbox(7)" alt="Keuken">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/7.jpg" onclick="currentSlideLightbox(7)" alt="Keuken">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/8.jpg" onclick="currentSlideLightbox(8)" alt="Keuken">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/8.jpg" onclick="currentSlideLightbox(8)" alt="Keuken">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/9.jpg" onclick="currentSlideLightbox(9)" alt="Slaapkamer 1">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/9.jpg" onclick="currentSlideLightbox(9)" alt="Slaapkamer 1">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/10.jpg" onclick="currentSlideLightbox(10)" alt="Slaapkamer 2">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/10.jpg" onclick="currentSlideLightbox(10)" alt="Slaapkamer 2">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/11.jpg" onclick="currentSlideLightbox(11)" alt="Badkamer 1">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/11.jpg" onclick="currentSlideLightbox(11)" alt="Badkamer 1">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/12.jpg" onclick="currentSlideLightbox(12)" alt="Slaapkamer 3">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/12.jpg" onclick="currentSlideLightbox(12)" alt="Slaapkamer 3">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/13.jpg" onclick="currentSlideLightbox(13)" alt="Badkamer 2">
-    </div>
+          <div class="column center">
+            <img class="demo" src="images/13.jpg" onclick="currentSlideLightbox(13)" alt="Badkamer 2">
+          </div>
 
-    <div class="column center">
-      <img class="demo" src="images/14.jpg" onclick="currentSlideLightbox(14)" alt="Badkamer 2">
-    </div>
-  </div>
-</div>
+          <div class="column center">
+            <img class="demo" src="images/14.jpg" onclick="currentSlideLightbox(14)" alt="Badkamer 2">
+          </div>
+        </div>
+      </div>
 
-        <h3 class="vakantiewoningTitel">Vakantiewoning 2</h3>
-        
+
 
       <div id="info">
         <h2 class="center">Info</h2>
@@ -241,38 +234,38 @@
         <div class="info">
           <div class="infoDelen">
             <div class="infoDeel1">
-                <h3 class="opsommingTitel">Algemeen</h3>
-                <li class="opsomming">Prijs: € 200 / nacht</li>
-                <li class="opsomming">8 personen of 6 personen</li>
-                <li class="opsomming">Toekomen vanaf 17u00</li>
-                <li class="opsomming">Vertrekken om 10u00</li>
+              <h3 class="opsommingTitel">Algemeen</h3>
+              <li class="opsomming">Prijs: € 200 / nacht</li>
+              <li class="opsomming">8 personen of 6 personen</li>
+              <li class="opsomming">Toekomen vanaf 17u00</li>
+              <li class="opsomming">Vertrekken om 10u00</li>
             </div>
             <div class="infoDeel2">
-                <h3 class="opsommingTitel">Inbegrepen in de huurprijs</h3>
-                <li class="opsomming">Opgemaakte bedden</li>
-                <li class="opsomming">Keukenlinnen</li>
-                <li class="opsomming">Regelmatige vervanging handdoeken</li>
-                <li class="opsomming">Regelmatige schoonmaak</li>
-                <li class="opsomming">Dagelijkse check-up</li>
-                <li class="opsomming">Wifi</li>
-                <li class="opsomming">Kinderbed</li>
+              <h3 class="opsommingTitel">Inbegrepen in de huurprijs</h3>
+              <li class="opsomming">Opgemaakte bedden</li>
+              <li class="opsomming">Keukenlinnen</li>
+              <li class="opsomming">Regelmatige vervanging handdoeken</li>
+              <li class="opsomming">Regelmatige schoonmaak</li>
+              <li class="opsomming">Dagelijkse check-up</li>
+              <li class="opsomming">Wifi</li>
+              <li class="opsomming">Kinderbed</li>
             </div>
             <div class="infoDeel3">
-                <h3 class="opsommingTitel">Bijkomende kosten</h3>
-                <li class="opsomming">Elektriciteit: € 0,35 / kWh</li>
-                <li class="opsomming">Gas / stookolie: € 0,85 / kWh</li>
-                <li class="opsomming">Water: € 5,00 / m³</li>
+              <h3 class="opsommingTitel">Bijkomende kosten</h3>
+              <li class="opsomming">Elektriciteit: € 0,35 / kWh</li>
+              <li class="opsomming">Gas / stookolie: € 0,85 / kWh</li>
+              <li class="opsomming">Water: € 5,00 / m³</li>
             </div>
           </div>
 
-            <br />
-            <li class="opsommingTitel">
-              De reservering is definitief bij het ontvangen van het voorschot
-              (= de helft van het tarief voor de huurperiode). Tien dagen voor
-              aankomst dient de andere helft + de waarborg overgeschreven te
-              zijn. De waarborg bedraagt € 300 en wordt binnen de 2 weken na het
-              einde van het verblijf terugbetaald.
-            </li>
+          <br />
+          <li class="opsommingTitel">
+            De reservering is definitief bij het ontvangen van het voorschot
+            (= de helft van het tarief voor de huurperiode). Tien dagen voor
+            aankomst dient de andere helft + de waarborg overgeschreven te
+            zijn. De waarborg bedraagt € 300 en wordt binnen de 2 weken na het
+            einde van het verblijf terugbetaald.
+          </li>
           </ul>
         </div>
       </div>
@@ -282,7 +275,8 @@
         <div class="titelLijn center"></div>
 
         <div style="width: 100%">
-          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=+(duinvis)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=+(duinvis)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
 
       </div>
@@ -293,16 +287,18 @@
         <div class="naastElkaar">
           <div class="eersteContact">
             <h3>Adres</h3>
-            <a class="link" href="https://www.google.be/maps/place/Vakantiehuis+DUINVIS/@51.1247623,2.6675315,17z/data=!3m1!4b1!4m5!3m4!1s0x47dcbd8bceed4599:0x94a3f728c3363294!8m2!3d51.1247623!4d2.6697202" target="_blank" >
-            <p class="link">Vakantiewoning Duinvis</p>
-            <p class="link">Gaupinlaan 13 en 15</p>
-            <p class="link">8670 Oostduinkerke</p>
-          </a>
+            <a class="link"
+              href="https://www.google.be/maps/place/Vakantiehuis+DUINVIS/@51.1247623,2.6675315,17z/data=!3m1!4b1!4m5!3m4!1s0x47dcbd8bceed4599:0x94a3f728c3363294!8m2!3d51.1247623!4d2.6697202"
+              target="_blank">
+              <p class="link">Vakantiewoning Duinvis</p>
+              <p class="link">Gaupinlaan 13 en 15</p>
+              <p class="link">8670 Oostduinkerke</p>
+            </a>
           </div>
           <div class="tweedeContact">
             <h3>Persoonsgegevens</h3>
             <p>Telefoonnummer: <a class="link" href="tel:0478/80 80 98">0478/80 80 98</a></p>
-            
+
             <p>
               Email:
               <a href="mailto:els@duinvis.be" class="link">els@duinvis.be</a>
@@ -319,29 +315,55 @@
         <div class="slideshow-container">
           <!-- Full-width slides/quotes -->
           <div class="mySlidesReview">
-            <q
-              >Mooi verzorgd huis met top locatie.</q
-            >
+            <q>Mooi verzorgd huis met top locatie.</q>
             <p class="author center">- Bart Seys</p>
           </div>
-          
+
           <div class="mySlidesReview">
-            <q
-              >Oostduinkerke en ik, dat was liefde op het eerste gezicht. Wat maakt deze plek dan zo speciaal, hoor ik je denken? Onze Belgische kust is maar liefst 60 km breed, menig grotere en gekendere badstad rijk en toch wist Oostduinkerke met zijn/haar pittoreske charme mijn hart te veroveren. Pittoresk, charmant, authentiek, een tikkeltje ruig omwille van de natuur die het omringt, een prachtig samenspel van de Noordzee, brede stranden met verre horizonten die je een eindeloos gevoel van vrijheid bezorgen, omkaderd door speelse duinen met hun typische plantengroei. Een setting die aanmaant tot rust, tot op jezelf plooien, stemt tot nadenken en alles weer in het juiste perspectief weet te plaatsen. Wat zijn wij mensen nietig in vergelijking met deze woeste creaties der natuur…
-              <br>Vele vakanties en lange weekends brachten we hier door, en toch weten we bij elk weerzien iets nieuws te ontdekken. Zo ook deze vakantie. Zittend op de brede houten vensterbank, laptop op de schoot, genietend van het mooie licht dat langs het grote raam binnenvalt, neem ik jullie mee in een bezoek aan vakantiewoning Duinvis, gelegen in de Gaupinlaan in rustige woonwijk op amper 1 km van het zeetje… 
-              Duinvis weet op harmonieuze wijze moderne bouwmaterialen, zoals beton en metaal te verenigen met de warmte van hout. Naast dit toch wel unieke samenspel van materialen en elementen, speelt ook het licht een belangrijke rol in deze exceptionele vakantiewoning. Dankzij de grote houten raampartijen die het huis rijk is, heb je in iedere kamer, met uitzondering van de badkamers, zicht op zand, duin en hun typische begroeiing, hetgeen resulteert in een prachtig schouwspel van licht, kleur en textuur bij iedere blik die je naar buiten werpt. 
-              De helft van de slaapgelegenheid bevindt zich, in tegenstelling tot de meeste huizen, onder het leefgedeelte, noem het een omgekeerde bel-étage. De twee ruime slaapkamers met zicht op de duin waarop de woning zorgvuldig werd ingeplant, wekken de illusie midden in een warm schilderij te ontwaken ’s morgens. Uitslapen hier is eigenlijk zonde, want dan mis je het aanzicht van het zachte ochtendlicht op het gele zand… Een mens zou voor minder goedgezind ontwaken. Ook in de ruime badkamer beneden werden materialen gebruikt die qua look en feel helemaal passen bij deze woning en het schilderachtige decor. Na het nemen van een verkwikkende douche onder de regendouche, ben je helemaal klaar om de dag te trotseren.
-              Via de mooie houten trap werk je je weg naar boven, naar het woongedeelte, begeleid door het prachtige licht dat via de grote raampartijen op het gelijkvloers binnenvalt. De open keuken nodigt uit tot gezellig kokerellen met zicht op tuin en duin en laat de kok van dienst toe steeds in contact te blijven met zijn dankbare publiek. Keuken en living vloeien naadloos in elkaar over zonder aan gevoel van ruimte in te boeten. Achter de living bevinden zich vervolgens nog twee slaapkamers, een mooie badkamer voorzien van alle moderne luxe alsook een apart toilet. 
-              Onze kinderen genieten met volle teugen van het van afglijden en vervolgens weer beklimmen van de duinhelling. Hetgeen het ons als ouders mogelijk maakt te genieten van dit enthousiaste spektakel, met een glaasje wijn in de hand en met dankbaarheid in ons hart. Helemaal in het hier, helemaal in het nu, helemaal in vakantiestemming, helemaal in de Duinvis…
-              </q
-            >
+            <q>Oostduinkerke en ik, dat was liefde op het eerste gezicht. Wat maakt deze plek dan zo speciaal, hoor ik
+              je denken? Onze Belgische kust is maar liefst 60 km breed, menig grotere en gekendere badstad rijk en toch
+              wist Oostduinkerke met zijn/haar pittoreske charme mijn hart te veroveren. Pittoresk, charmant,
+              authentiek, een tikkeltje ruig omwille van de natuur die het omringt, een prachtig samenspel van de
+              Noordzee, brede stranden met verre horizonten die je een eindeloos gevoel van vrijheid bezorgen, omkaderd
+              door speelse duinen met hun typische plantengroei. Een setting die aanmaant tot rust, tot op jezelf
+              plooien, stemt tot nadenken en alles weer in het juiste perspectief weet te plaatsen. Wat zijn wij mensen
+              nietig in vergelijking met deze woeste creaties der natuur…
+              <br>
+              Vele vakanties en lange weekends brachten we hier door, en toch weten we bij elk weerzien iets nieuws
+              te ontdekken. Zo ook deze vakantie. Zittend op de brede houten vensterbank, laptop op de schoot, genietend
+              van het mooie licht dat langs het grote raam binnenvalt, neem ik jullie mee in een bezoek aan
+              vakantiewoning Duinvis, gelegen in de Gaupinlaan in rustige woonwijk op amper 1 km van het zeetje…
+              Duinvis weet op harmonieuze wijze moderne bouwmaterialen, zoals beton en metaal te verenigen met de warmte
+              van hout. Naast dit toch wel unieke samenspel van materialen en elementen, speelt ook het licht een
+              belangrijke rol in deze exceptionele vakantiewoning. Dankzij de grote houten raampartijen die het huis
+              rijk is, heb je in iedere kamer, met uitzondering van de badkamers, zicht op zand, duin en hun typische
+              begroeiing, hetgeen resulteert in een prachtig schouwspel van licht, kleur en textuur bij iedere blik die
+              je naar buiten werpt.
+              <br>
+              De helft van de slaapgelegenheid bevindt zich, in tegenstelling tot de meeste huizen, onder het
+              leefgedeelte, noem het een omgekeerde bel-étage. De twee ruime slaapkamers met zicht op de duin waarop de
+              woning zorgvuldig werd ingeplant, wekken de illusie midden in een warm schilderij te ontwaken ’s morgens.
+              Uitslapen hier is eigenlijk zonde, want dan mis je het aanzicht van het zachte ochtendlicht op het gele
+              zand… Een mens zou voor minder goedgezind ontwaken. Ook in de ruime badkamer beneden werden materialen
+              gebruikt die qua look en feel helemaal passen bij deze woning en het schilderachtige decor. Na het nemen
+              van een verkwikkende douche onder de regendouche, ben je helemaal klaar om de dag te trotseren.
+              Via de mooie houten trap werk je je weg naar boven, naar het woongedeelte, begeleid door het prachtige
+              licht dat via de grote raampartijen op het gelijkvloers binnenvalt. De open keuken nodigt uit tot gezellig
+              kokerellen met zicht op tuin en duin en laat de kok van dienst toe steeds in contact te blijven met zijn
+              dankbare publiek. Keuken en living vloeien naadloos in elkaar over zonder aan gevoel van ruimte in te
+              boeten. Achter de living bevinden zich vervolgens nog twee slaapkamers, een mooie badkamer voorzien van
+              alle moderne luxe alsook een apart toilet.
+              <br>
+              Onze kinderen genieten met volle teugen van het van afglijden en vervolgens weer beklimmen van de
+              duinhelling. Hetgeen het ons als ouders mogelijk maakt te genieten van dit enthousiaste spektakel, met een
+              glaasje wijn in de hand en met dankbaarheid in ons hart. Helemaal in het hier, helemaal in het nu,
+              helemaal in vakantiestemming, helemaal in de Duinvis…
+            </q>
             <p class="author center">- Ine Janssens</p>
           </div>
 
           <div class="mySlidesReview">
-            <q
-              >Een aanrader!</q
-            >
+            <q>Een aanrader!</q>
             <p class="author center">- Jef Seys</p>
           </div>
 
@@ -357,59 +379,60 @@
         </div>
       </div>
     </div>
-  </body>
+</body>
 
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <h3>Vakantiewoning<span> Duinvis</span></h3>
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <h3>Vakantiewoning<span> Duinvis</span></h3>
 
-      <p class="footer-links">
-        <a href="#home" class="link-1">Duinvis</a>
+    <p class="footer-links">
+      <a href="#home" class="link-1">Duinvis</a>
 
-        <a href="#deWoning">De Woning</a>
+      <a href="#deWoning">De Woning</a>
 
-        <a href="#info">Info</a>
+      <a href="#info">Info</a>
 
-        <a href="#ligging">Ligging</a>
+      <a href="#ligging">Ligging</a>
 
-        <a href="#contact">Contact</a>
+      <a href="#contact">Contact</a>
 
-        <a href="#recensies">Recensies</a>
-      </p>
+      <a href="#recensies">Recensies</a>
+    </p>
 
-      <p class="footer-company-name">Duinvis © 2020</p>
+    <p class="footer-company-name">Duinvis © 2020</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <a href="https://www.google.be/maps/place/Vakantiehuis+DUINVIS/@51.1247623,2.6675315,17z/data=!3m1!4b1!4m5!3m4!1s0x47dcbd8bceed4599:0x94a3f728c3363294!8m2!3d51.1247623!4d2.6697202"
+        target="_blank">
+        <p style="color: #30a1ec;"><span>Gaupinlaan 13 en 15</span>8670 Oostduinkerke</p>
+      </a>
     </div>
 
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <a href="https://www.google.be/maps/place/Vakantiehuis+DUINVIS/@51.1247623,2.6675315,17z/data=!3m1!4b1!4m5!3m4!1s0x47dcbd8bceed4599:0x94a3f728c3363294!8m2!3d51.1247623!4d2.6697202" target="_blank" >
-          <p style="color: #30a1ec;"><span>Gaupinlaan 13 en 15</span>8670 Oostduinkerke</p></a>
-      </div>
-
-      <div>
-        <i class="fa fa-phone"></i>
-        <p><a class="link" href="tel:0478/80 80 98">0478/80 80 98</a></p>
-      </div>
-
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:els@duinvis.be" class="link">els@duinvis.be</a></p>
-      </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p><a class="link" href="tel:0478/80 80 98">0478/80 80 98</a></p>
     </div>
 
-    <div class="footer-right">
-      <p class="footer-company-about">
-        Heeft u nog vragen of opmerkingen, neem dan zeker contact met ons op.
-      </p>
-
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/duinvis/?hl=nl" target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:els@duinvis.be" class="link">els@duinvis.be</a></p>
     </div>
-  </footer>
+  </div>
+
+  <div class="footer-right">
+    <p class="footer-company-about">
+      Heeft u nog vragen of opmerkingen, neem dan zeker contact met ons op.
+    </p>
+
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/duinvis/?hl=nl" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
 </html>
 <script>
   window.onscroll = function () {
@@ -428,13 +451,13 @@
   }
 
   function toggleMenu() {
-  var x = document.getElementById("titelKlein");
-  if (x.style.display === "inline-block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "inline-block";
+    var x = document.getElementById("titelKlein");
+    if (x.style.display === "inline-block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "inline-block";
+    }
   }
-}
 </script>
 <script src="js/slideshow.js"></script>
 <script src="js/lightbox.js"></script>

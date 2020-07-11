@@ -87,6 +87,13 @@ h2{
   width: 90%;
 }
 
+.imageGroot{
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 86vh;
+}
+
 .opsommingTitel{
   list-style-type: none;
   padding-bottom: 10px;
@@ -237,7 +244,7 @@ h2{
   display: none;
   position: fixed;
   z-index: 2;
-  padding-top: 70px;
+  padding-top: 40px;
   left: 0;
   top: 0;
   width: 100%;
@@ -633,5 +640,9 @@ section {
 
   #navbar a{
     float: none;
+  }
+
+  .demo{
+    display: none;
   }
 }
