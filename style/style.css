@@ -94,6 +94,10 @@ h2{
   max-height: 86vh;
 }
 
+img.loading {
+  background: transparent url('../images/loading.gif') no-repeat scroll center center;
+}
+
 .opsommingTitel{
   list-style-type: none;
   padding-bottom: 10px;
