@@ -1,27 +1,28 @@
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
+function openModal(modal) {
+    document.getElementById(modal).style.display = "block";
   }
   
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+  function closeModal(modal) {
+    document.getElementById(modal).style.display = "none";
   }
   
   var slideIndex = 1;
-  showSlidesLightBox(slideIndex);
+  showSlidesLightBox(slideIndex, 1);
+  showSlidesLightBox(slideIndex, 2);
   
-  function plusSlidesLightbox(n) {
-    showSlidesLightBox(slideIndex += n);
+  function plusSlidesLightbox(n, slidebox) {
+    showSlidesLightBox(slideIndex += n, slidebox);
   }
   
-  function currentSlideLightbox(n) {
-    showSlidesLightBox(slideIndex = n);
+  function currentSlideLightbox(n, slidebox) {
+    showSlidesLightBox(slideIndex = n, slidebox);
   }
   
-  function showSlidesLightBox(n) {
+  function showSlidesLightBox(n, slidebox) {
     var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var slides = document.getElementsByClassName("mySlides" + slidebox);
+  var dots = document.getElementsByClassName("demo" + slidebox);
+  var captionText = document.getElementById("caption" + slidebox);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

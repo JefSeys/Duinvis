@@ -60,168 +60,390 @@
     <div id="deWoning">
       <h2 class="center">De Woning</h2>
       <div class="titelLijn center"></div>
-      <div class="imageShow center">
-        <div class="row">
-          <div class="column">
-            <img src="images/1.jpg" onclick="openModal();currentSlideLightbox(1)" class="hover-shadow smallImage">
-            <img src="images/5.jpg" onclick="openModal();currentSlideLightbox(5)" class="hover-shadow smallImage">
-            <img src="images/8.jpg" onclick="openModal();currentSlideLightbox(8)" class="hover-shadow smallImage">
-            <img src="images/12.jpg" onclick="openModal();currentSlideLightbox(12)" class="hover-shadow smallImage">
+      <div class="imageShow">
+        <div class="imageShowLinks">
+          <h3 class="center">Vakantiewoning <a class="blauw">blauw</a></h3>
+          <ul>
+            <li>4 slaapkamers</li>
+            <li>2 badkamers</li>
+          </ul>
+          <a onclick="openModal('myModal1');currentSlideLightbox(1, 1)" class="button1 center">Meer foto's</a>
+          <div class="row">
+            <div class="column">
+              <img src="images/Blauw klein/EERSTE FOTO's/blauwKlein1.jpg" onclick="openModal('myModal1');currentSlideLightbox(1, 1)" class="hover-shadow smallImage">
+              <img src="images/Blauw klein/EERSTE FOTO's/blauwKlein3.jpg" onclick="openModal('myModal1');currentSlideLightbox(3, 1)" class="hover-shadow smallImage">
+              <img src="images/Blauw klein/EERSTE FOTO's/blauwKlein5.jpg" onclick="openModal('myModal1');currentSlideLightbox(17, 1)" class="hover-shadow smallImage">
+            </div>
+            <div class="column">
+              <img src="images/Blauw klein/EERSTE FOTO's/blauwKlein2.jpg" onclick="openModal('myModal1');currentSlideLightbox(2, 1)" class="hover-shadow smallImage">
+              <img src="images/Blauw klein/EERSTE FOTO's/blauwKlein4.jpg" onclick="openModal('myModal1');currentSlideLightbox(4, 1)" class="hover-shadow smallImage">
+            </div>
           </div>
-          <div class="column">
-            <img src="images/2.jpg" onclick="openModal();currentSlideLightbox(2)" class="hover-shadow smallImage">
-            <img src="images/6.jpg" onclick="openModal();currentSlideLightbox(6)" class="hover-shadow smallImage">
-            <img src="images/9.jpg" onclick="openModal();currentSlideLightbox(9)" class="hover-shadow smallImage">
-            <img src="images/13.jpg" onclick="openModal();currentSlideLightbox(13)" class="hover-shadow smallImage">
-          </div>
-          <div class="column">
-            <img src="images/3.jpg" onclick="openModal();currentSlideLightbox(3)" class="hover-shadow smallImage">
-            <img src="images/10.jpg" onclick="openModal();currentSlideLightbox(10)" class="hover-shadow smallImage">
-            <img src="images/14.jpg" onclick="openModal();currentSlideLightbox(14)" class="hover-shadow smallImage">
-          </div>
-          <div class="column">
-            <img src="images/4.jpg" onclick="openModal();currentSlideLightbox(4)" class="hover-shadow smallImage">
-            <img src="images/7.jpg" onclick="openModal();currentSlideLightbox(7)" class="hover-shadow smallImage">
-            <img src="images/11.jpg" onclick="openModal();currentSlideLightbox(11)" class="hover-shadow smallImage">
+        </div>
+        <div class="imageShowRechts">
+          <h3 class="center">Vakantiewoning <a class="rood">rood</a></h3>
+          <ul>
+            <li>3 slaapkamers</li>
+            <li>2 badkamers</li>
+          </ul>
+          <a onclick="openModal('myModal2');currentSlideLightbox(1, 2)" class="button1 center">Meer foto's</a>
+          <div class="row">
+            <div class="column">
+              <img src="images/Rood klein/EERSTE FOTO's/roodKlein1.jpg" onclick="openModal('myModal2');currentSlideLightbox(1, 2)" class="hover-shadow smallImage">
+              <img src="images/Rood klein/EERSTE FOTO's/roodKlein3.jpg" onclick="openModal('myModal2');currentSlideLightbox(6, 2)" class="hover-shadow smallImage">
+              <img src="images/Rood klein/EERSTE FOTO's/roodKlein5.jpg" onclick="openModal('myModal2');currentSlideLightbox(9, 2)" class="hover-shadow smallImage">
+            </div>
+            <div class="column">
+              <img src="images/Rood klein/EERSTE FOTO's/roodKlein2.jpg" onclick="openModal('myModal2');currentSlideLightbox(2, 2)" class="hover-shadow smallImage">
+              <img src="images/Rood klein/EERSTE FOTO's/roodKlein4.jpg" onclick="openModal('myModal2');currentSlideLightbox(16, 2)" class="hover-shadow smallImage">
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+      <!-- Eerste slideshow-->
+      <div id="myModal1" class="modal">
+        <span class="close cursor" onclick="closeModal('myModal1')">&times;</span>
         <div class="modal-content">
 
-          <div class="mySlides">
-            <div class="numbertext">1 / 14</div>
-            <img src="images/1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">1 / 17</div>
+            <img src="images/Blauw groot/blauwGroot1.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">2 / 14</div>
-            <img src="images/2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">2 / 17</div>
+            <img src="images/Blauw groot/blauwGroot1.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">3 / 14</div>
-            <img src="images/3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">3 / 17</div>
+            <img src="images/Blauw groot/blauwGroot2.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">4 / 14</div>
-            <img src="images/4.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">4 / 17</div>
+            <img src="images/Blauw groot/blauwGroot3.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">5 / 14</div>
-            <img src="images/5.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">5 / 17</div>
+            <img src="images/Blauw groot/blauwGroot4.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">6 / 14</div>
-            <img src="images/6.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">6 / 17</div>
+            <img src="images/Blauw groot/blauwGroot5.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">7 / 14</div>
-            <img src="images/7.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">7 / 17</div>
+            <img src="images/Blauw groot/blauwGroot6.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">8 / 14</div>
-            <img src="images/8.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">8 / 17</div>
+            <img src="images/Blauw groot/blauwGroot7.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">9 / 14</div>
-            <img src="images/9.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">9 / 17</div>
+            <img src="images/Blauw groot/blauwGroot8.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">10 / 14</div>
-            <img src="images/10.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">10 / 17</div>
+            <img src="images/Blauw groot/blauwGroot9.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">11 / 14</div>
-            <img src="images/11.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">11 / 17</div>
+            <img src="images/Blauw groot/blauwGroot10.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">12 / 14</div>
-            <img src="images/12.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">12 / 17</div>
+            <img src="images/Blauw groot/blauwGroot11.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">13 / 14</div>
-            <img src="images/13.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">13 / 17</div>
+            <img src="images/Blauw groot/blauwGroot12.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">14 / 14</div>
-            <img src="images/14.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">14 / 17</div>
+            <img src="images/Blauw groot/blauwGroot13.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
-          <a class="prev" onclick="plusSlidesLightbox(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlidesLightbox(1)">&#10095;</a>
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">15 / 17</div>
+            <img src="images/Blauw groot/blauwGroot14.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">16 / 17</div>
+            <img src="images/Blauw groot/blauwGroot15.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides1 mySlides">
+            <div class="numbertext">17 / 17</div>
+            <img src="images/Blauw groot/blauwGroot16.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <a class="prev" onclick="plusSlidesLightbox(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlidesLightbox(1, 1)">&#10095;</a>
 
           <div class="caption-container">
-            <p id="caption"></p>
+            <p id="caption1"></p>
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/1.jpg" onclick="currentSlideLightbox(1)" alt="Buitenkant">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot1.1.jpg" onclick="currentSlideLightbox(1, 1)" alt="Buitenkant">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/2.jpg" onclick="currentSlideLightbox(2)" alt="Buitenkant">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot1.2.jpg" onclick="currentSlideLightbox(2, 1)" alt="Buitenkant">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/3.jpg" onclick="currentSlideLightbox(3)" alt="Buitenkant">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot2.1.jpg" onclick="currentSlideLightbox(3, 1)" alt="Buitenkant">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/4.jpg" onclick="currentSlideLightbox(4)" alt="Living">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot3.1.jpg" onclick="currentSlideLightbox(4, 1)" alt="Living">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/5.jpg" onclick="currentSlideLightbox(5)" alt="Living">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot4.1.jpg" onclick="currentSlideLightbox(5, 1)" alt="Living">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/6.jpg" onclick="currentSlideLightbox(6)" alt="Keuken">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot5.1.jpg" onclick="currentSlideLightbox(6, 1)" alt="Keuken">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/7.jpg" onclick="currentSlideLightbox(7)" alt="Keuken">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot6.1.jpg" onclick="currentSlideLightbox(7, 1)" alt="Keuken">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/8.jpg" onclick="currentSlideLightbox(8)" alt="Keuken">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot7.1.jpg" onclick="currentSlideLightbox(8, 1)" alt="Keuken">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/9.jpg" onclick="currentSlideLightbox(9)" alt="Slaapkamer 1">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot8.1.jpg" onclick="currentSlideLightbox(9, 1)" alt="Slaapkamer 1">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/10.jpg" onclick="currentSlideLightbox(10)" alt="Slaapkamer 2">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot9.1.jpg" onclick="currentSlideLightbox(10, 1)" alt="Slaapkamer 2">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/11.jpg" onclick="currentSlideLightbox(11)" alt="Badkamer 1">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot10.1.jpg" onclick="currentSlideLightbox(11, 1)" alt="Badkamer 1">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/12.jpg" onclick="currentSlideLightbox(12)" alt="Slaapkamer 3">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot11.1.jpg" onclick="currentSlideLightbox(12, 1)" alt="Slaapkamer 3">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/13.jpg" onclick="currentSlideLightbox(13)" alt="Badkamer 2">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot12.1.jpg" onclick="currentSlideLightbox(13, 1)" alt="Badkamer 2">
           </div>
 
-          <div class="column center">
-            <img class="demo" src="images/14.jpg" onclick="currentSlideLightbox(14)" alt="Badkamer 2">
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot13.1.jpg" onclick="currentSlideLightbox(14, 1)" alt="Badkamer 2">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot14.1.jpg" onclick="currentSlideLightbox(15, 1)" alt="Badkamer 2">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot15.1.jpg" onclick="currentSlideLightbox(16, 1)" alt="Badkamer 2">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo1 demo" src="images/Blauw groot/blauwGroot16.1.jpg" onclick="currentSlideLightbox(17, 1)" alt="Badkamer 2">
+          </div>
+        </div>
+      </div>
+
+      <!-- Tweede slideshow-->
+      <div id="myModal2" class="modal">
+        <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">1 / 22</div>
+            <img src="images/Rood groot/roodGroot1.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">2 / 22</div>
+            <img src="images/Rood groot/roodGroot1.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">3 / 22</div>
+            <img src="images/Rood groot/roodGroot1.3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">4 / 22</div>
+            <img src="images/Rood groot/roodGroot1.4.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">5 / 22</div>
+            <img src="images/Rood groot/roodGroot1.5.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">6 / 22</div>
+            <img src="images/Rood groot/roodGroot2.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">7 / 22</div>
+            <img src="images/Rood groot/roodGroot3.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">8 / 22</div>
+            <img src="images/Rood groot/roodGroot3.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">9 / 22</div>
+            <img src="images/Rood groot/roodGroot4.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">10 / 22</div>
+            <img src="images/Rood groot/roodGroot4.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">11 / 22</div>
+            <img src="images/Rood groot/roodGroot4.3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">12 / 22</div>
+            <img src="images/Rood groot/roodGroot5.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">13 / 22</div>
+            <img src="images/Rood groot/roodGroot6.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">14 / 22</div>
+            <img src="images/Rood groot/roodGroot7.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">15 / 22</div>
+            <img src="images/Rood groot/roodGroot8.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">16 / 22</div>
+            <img src="images/Rood groot/roodGroot8.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">17 / 22</div>
+            <img src="images/Rood groot/roodGroot9.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">18 / 22</div>
+            <img src="images/Rood groot/roodGroot9.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">19 / 22</div>
+            <img src="images/Rood groot/roodGroot9.3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">20 / 22</div>
+            <img src="images/Rood groot/roodGroot10.1.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">21 / 22</div>
+            <img src="images/Rood groot/roodGroot10.2.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <div class="mySlides2 mySlides">
+            <div class="numbertext">22 / 22</div>
+            <img src="images/Rood groot/roodGroot10.3.jpg" class="imageGroot" style="display: block; margin-left: auto; margin-right: auto;">
+          </div>
+
+          <a class="prev" onclick="plusSlidesLightbox(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlidesLightbox(1, 2)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption2"></p>
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/Rood klein/roodKlein1.1.jpg" onclick="currentSlideLightbox(1, 2)" alt="Buitenkant">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/Rood klein/" onclick="currentSlideLightbox(2, 2)" alt="Buitenkant">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/3.jpg" onclick="currentSlideLightbox(3, 2)" alt="Buitenkant">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/4.jpg" onclick="currentSlideLightbox(4, 2)" alt="Living">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/5.jpg" onclick="currentSlideLightbox(5, 2)" alt="Living">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/6.jpg" onclick="currentSlideLightbox(6, 2)" alt="Keuken">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/7.jpg" onclick="currentSlideLightbox(7, 2)" alt="Keuken">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/8.jpg" onclick="currentSlideLightbox(8, 2)" alt="Keuken">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/9.jpg" onclick="currentSlideLightbox(9, 2)" alt="Slaapkamer 1">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/10.jpg" onclick="currentSlideLightbox(10, 2)" alt="Slaapkamer 2">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/11.jpg" onclick="currentSlideLightbox(11, 2)" alt="Badkamer 1">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/12.jpg" onclick="currentSlideLightbox(12, 2)" alt="Slaapkamer 3">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/13.jpg" onclick="currentSlideLightbox(13, 2)" alt="Badkamer 2">
+          </div>
+
+          <div class="columndemo center">
+            <img class="demo2 demo" src="images/14.jpg" onclick="currentSlideLightbox(14, 2)" alt="Badkamer 2">
           </div>
         </div>
       </div>
