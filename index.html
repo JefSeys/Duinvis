@@ -12,7 +12,7 @@
 
 <body>
   <div class="header">
-    <img class="logo" src="images/Blauw groot/blauwGroot1.1.jpg" style="width: 100%;" />
+    <img class="logo" id="logo" src="images/Blauw klein/blauwKlein1.1.jpg" style="width: 100%;" />
   </div>
   <div id="navbar">
     <div class="stippenKlein">
@@ -690,6 +690,8 @@
 
 </html>
 <script>
+  document.getElementById("logo").src = "images/Blauw groot/blauwGroot1.1.jpg";
+
   window.onscroll = function () {
     myFunction();
   };
