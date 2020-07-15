@@ -132,11 +132,6 @@ h2 {
   display: flex;
 }
 
-.imageShowLinks,
-.imageShowRechts {
-  width: 50%;
-}
-
 .imageShowLinks {
   padding-left: 2%;
   padding-right: 1%;
@@ -234,6 +229,12 @@ img.loading {
   margin-right: auto;
 }
 
+.centerDiv{
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
 .eersteContact {
   width: 49%;
   float: left;
@@ -267,7 +268,7 @@ img.loading {
   display: flex;
 }
 
-.infoDelen div li {
+.infoDelen div li, .centerDiv li {
   list-style-type: square;
 }
 
@@ -648,7 +649,7 @@ section {
 }
 
 .footer-distributed .footer-icons {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .footer-distributed .footer-icons a {
@@ -663,10 +664,6 @@ section {
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
-  padding-top: 7px;
-  margin-right: 3px;
-  margin-bottom: 5px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -716,5 +713,9 @@ section {
 
   .demo {
     display: none;
+  }
+
+  .imageShow {
+    display: block;
   }
 }
