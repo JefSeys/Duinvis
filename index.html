@@ -8,6 +8,13 @@
   <link href="style/reset_browser_styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="style/font-awesome.min.css" />
   <link href="style/style.css" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173118286-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-173118286-1');
+  </script>
 </head>
 
 <body>
@@ -52,7 +59,7 @@
           De gezellige kleuren en tijdloze eenvoud brengen je onmiddellijk in vakantiesfeer.
         </p>
         <p>
-          Duinvis is rustig gelegen op 800m van het mooie strand van Sint -André.
+          Duinvis is rustig gelegen op 800m van het mooie strand van Sint -Andr&eacute;.
         </p>
       </div>
     </div>
@@ -489,7 +496,7 @@
           <div class="infoDelen">
             <div class="infoDeel1">
               <h3 class="opsommingTitel">Algemeen</h3>
-              <li class="opsomming">Prijs: € 200 / nacht</li>
+              <li class="opsomming">Prijs: &euro; 200 / nacht</li>
               <li class="opsomming">8 personen of 6 personen</li>
               <li class="opsomming">Toekomen vanaf 17u00</li>
               <li class="opsomming">Vertrekken om 10u00</li>
@@ -506,9 +513,9 @@
             </div>
             <div class="infoDeel3">
               <h3 class="opsommingTitel">Bijkomende kosten</h3>
-              <li class="opsomming">Elektriciteit: € 0,35 / kWh</li>
-              <li class="opsomming">Gas / stookolie: € 0,85 / kWh</li>
-              <li class="opsomming">Water: € 5,00 / m³</li>
+              <li class="opsomming">Elektriciteit: &euro; 0,35 / kWh</li>
+              <li class="opsomming">Gas / stookolie: &euro; 0,85 / kWh</li>
+              <li class="opsomming">Water: &euro; 5,00 / m&sup3;</li>
             </div>
           </div>
 
@@ -517,7 +524,7 @@
             De reservering is definitief bij het ontvangen van het voorschot
             (= de helft van het tarief voor de huurperiode). Tien dagen voor
             aankomst dient de andere helft + de waarborg overgeschreven te
-            zijn. De waarborg bedraagt € 300 en wordt binnen de 2 weken na het
+            zijn. De waarborg bedraagt &euro; 300 en wordt binnen de 2 weken na het
             einde van het verblijf terugbetaald.
           </li>
           </ul>
@@ -596,7 +603,7 @@
               je naar buiten werpt.
               <br>
               De helft van de slaapgelegenheid bevindt zich, in tegenstelling tot de meeste huizen, onder het
-              leefgedeelte, noem het een omgekeerde bel-étage. De twee ruime slaapkamers met zicht op de duin waarop de
+              leefgedeelte, noem het een omgekeerde bel-&eacute;tage. De twee ruime slaapkamers met zicht op de duin waarop de
               woning zorgvuldig werd ingeplant, wekken de illusie midden in een warm schilderij te ontwaken ’s morgens.
               Uitslapen hier is eigenlijk zonde, want dan mis je het aanzicht van het zachte ochtendlicht op het gele
               zand… Een mens zou voor minder goedgezind ontwaken. Ook in de ruime badkamer beneden werden materialen
@@ -654,7 +661,7 @@
       <a href="#recensies">Recensies</a>
     </p>
 
-    <p class="footer-company-name">Duinvis © 2020</p>
+    <p class="footer-company-name">Duinvis &copy; 2020</p>
   </div>
 
   <div class="footer-center">
@@ -697,9 +704,12 @@
   };
 
   var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
+  var sticky;
 
   function myFunction() {
+    if (sticky != navbar.offsetTop && navbar.offsetTop != 0) {
+      sticky = navbar.offsetTop;
+    }
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky");
     } else {
@@ -716,37 +726,40 @@
     }
   }
 
-  document.onkeydown = function(e) {
-        e = e || window.event;
-        if (e.keyCode == '37') {
-            changeImage(-1) //left <- show Prev image
-        } else if (e.keyCode == '39') {
-            // right -> show next image
-            changeImage(1)
-        }
+  document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+      changeImage(-1) //left <- show Prev image
+    } else if (e.keyCode == '39') {
+      // right -> show next image
+      changeImage(1)
+    } else if (e.keyCode == '27') {
+      document.getElementById("myModal1").style.display = "none";
+      document.getElementById("myModal2").style.display = "none";
     }
+  }
 
-    function changeImage(dir) {
+  function changeImage(dir) {
     var modal1 = document.getElementById("myModal1");
     var modal2 = document.getElementById("myModal2");
-    if(modal1.style.display == "block"){
-      if(dir == -1){
-      plusSlidesLightbox(-1, 1)
+    if (modal1.style.display == "block") {
+      if (dir == -1) {
+        plusSlidesLightbox(-1, 1)
       }
-      else{
-      plusSlidesLightbox(1, 1)
-      }
-    }
-    else if(modal2.style.display == "block"){
-      if(dir == -1){
-      plusSlidesLightbox(-1, 2)
-      }
-      else{
-      plusSlidesLightbox(1, 2)
+      else {
+        plusSlidesLightbox(1, 1)
       }
     }
-    
+    else if (modal2.style.display == "block") {
+      if (dir == -1) {
+        plusSlidesLightbox(-1, 2)
+      }
+      else {
+        plusSlidesLightbox(1, 2)
+      }
     }
+
+  }
 </script>
 <script src="js/slideshow.js"></script>
 <script src="js/lightbox.js"></script>
